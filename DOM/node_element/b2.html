@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li>javascript</li>
+            <li>php</li>
+        </ul>
+    </div>
+
+    <div class="box-1">
+        <ul>
+            <li>c++</li>
+            <li>c#</li>
+        </ul>
+        <p>this's a P</p>
+    </div>
+    <!-- html <> js -->
+    <script>
+        // let getbox = document.querySelectorAll('.box li')
+        // console.log(getbox)
+        // let getbox = document.querySelector('.box')
+        // console.log(getbox.querySelectorAll('li'))
+
+
+        let getBox1 = document.querySelectorAll('.box-1 ul')
+        console.log(getBox1)
+        let array = Array.from(getBox1)  // cover thanh array
+        // console.log(array.push(123))
+        for(let i = 0; i < array.length; i++)
+        console.log(array[i])
+        console.log(array[0])
+
+          //đứng từ getbox1 tìm các thẻ li
+    </script>
+</body>
+
+</html>

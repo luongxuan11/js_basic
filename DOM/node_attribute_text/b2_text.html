@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text node</title>
+</head>
+<body>
+
+    <h1>headinafesgdhg</h1>
+    <h2 class="hihi">
+        <span>this is a h2</span>
+    </h2>
+    <script>
+        let getHeading = document.getElementsByTagName('h1')[0]
+        getHeading.innerText = "new heading" // gán text node mới
+        console.log(getHeading.innerText) // lấy ra đoạn text node
+        console.log(getHeading.textContent) // cung lay ra doan text
+
+
+
+                // sự khác nhau giữa innertext vs textcontent
+                let geth2 = document.querySelector('h2')
+        console.log(geth2.textContent)
+            // điểm khác biệt là vẫn lấy ra khoảng cách trong code khi in ra console
+    </script>
+</body>
+</html>

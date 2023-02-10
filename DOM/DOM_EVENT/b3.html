@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://google.com">head to googe</a>
+    <script>
+        let geta = document.querySelectorAll('a')
+        for(let i = 0; i < geta.length; i++)
+        {
+            geta.onclick = (e) =>
+            {
+               if(!e.target.href.startWith('https://www.facebook.com/'))
+               {
+                    e.preventDefault();
+               }
+            }
+        }
+    </script>
+</body>
+</html>

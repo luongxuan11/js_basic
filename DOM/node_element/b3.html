@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ôn lại kiến thức</title>
+</head>
+
+<body>
+
+    <div id="h1">Hello</div>
+    <div class="all">
+        <div class="box">
+            <p class="card"></p>
+            <p class="card1"></p>
+        </div>
+
+        <div class="box1">
+            <p class="card2"></p>
+            <p class="card3"></p>
+        </div>
+    </div>
+
+
+
+    <script>
+        let element = document.getElementById('h1')
+        console.log(element) // đổi với thuộc tính byid sẽ trả ra 1 element
+
+        let getbox = document.getElementsByClassName('box')
+        console.log({ getbox }) // thuộc tính classname sẽ trả ra 1 collection 
+        // collection này sẽ được định nghĩa là array hoặc obj nếu được bọc bằng 
+        // 1 trong 2 cái
+
+        let getbox1 = document.querySelector('.box1 .card3')
+        // cái này cũng trả ra 1 element
+        console.log(getbox1)
+
+        let getall = document.querySelectorAll('.all')
+        console.log(getall) // sẽ trả ra 1 node list
+    </script>
+</body>
+
+</html>

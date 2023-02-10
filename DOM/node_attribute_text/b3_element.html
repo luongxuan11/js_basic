@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elements</title>
+</head>
+<body>
+    <div class="hello"></div>
+    <script>
+        // hai khái niệm innerHTML vs outerHTML
+        let getelement = document.querySelector('.hello')
+        getelement.innerHTML = "<p class='hihi' >day la the con cua P</p>"
+        // innerHTML có thể thêm được cả title
+        console.log(getelement.innerHTML) // lấy tất cả thẻ con ra
+        console.log(getelement.outerHTML) // lấy tất cả kể cả thẻ cha
+
+
+    </script>
+</body>
+</html>

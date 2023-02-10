@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .red {
+            color: red
+        }
+    </style>
+    <div class="box box2">
+        <h1>hello world!</h1>
+    </div>
+
+
+    <script>
+        let getbox = document.querySelector('.box')
+        console.log(getbox.classList.length) // kieerm tra so luowng class
+        console.log(getbox.classList[1])
+
+        let geth1 = document.getElementsByTagName('h1')[0]
+        geth1.classList.add('red', 'blue')  //cách thêm 1 class
+        console.log(geth1.classList.contains("red"))  // contains: chứa
+
+        setTimeout(() => {
+            geth1.classList.remove('red')
+        }, 3000)
+
+
+    </script>
+</body>
+
+</html>

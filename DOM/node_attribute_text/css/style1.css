@@ -1,0 +1,10 @@
+button{
+    box-sizing: border-box;
+    outline: none;
+    padding: 20px 30px;
+}
+p{
+    color: brown;
+    padding: 20px;
+    border: 2px solid;
+}

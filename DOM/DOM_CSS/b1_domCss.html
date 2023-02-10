@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h1>
+            dom CSS
+        </h1>
+    </div>
+    <div class="box2"></div>
+
+    <script>
+        let getBox = document.querySelector(".box")
+        getBox.style.width = "100px"
+        getBox.style.height = "100px"
+        getBox.style.backgroundColor = "red"
+
+        // một cách khác sử dụng để thêm nhiều thuộc tính
+        let getBox2 = document.querySelector('.box2')
+        Object.assign(getBox2.style,{
+            width: '200px',
+            height: '200px',
+            backgroundColor: 'green',
+        })
+        console.log(getBox2.style.width)
+    </script>
+</body>
+</html>

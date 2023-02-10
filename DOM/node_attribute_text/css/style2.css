@@ -1,0 +1,9 @@
+button{
+    box-sizing: border-box;
+    outline: none;
+    padding: 20px 30px;
+}
+p{
+    color: red;
+    border: 2px solid;
+}
